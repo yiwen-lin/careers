@@ -1,0 +1,111 @@
+.slickbox {
+  margin: 50px auto 100px;
+}
+
+@media only screen and (max-width: 767px) {
+  .slickbox {
+    margin-top: 30px;
+  }
+}
+
+.slickbox img {
+  display: block;
+  width: 100%;
+}
+
+.slickbox .slickbox--1 .slick-slide {
+  padding: 0 15px;
+}
+
+@media only screen and (max-width: 767px) {
+  .slickbox .slickbox--1 .slick-slide {
+    padding: 0 6px;
+  }
+}
+
+.slickbox .slickbox--1 .slick-prev, .slickbox .slickbox--1 .slick-next {
+  top: -10%;
+}
+
+@media only screen and (max-width: 767px) {
+  .slickbox .slickbox--1 .slick-prev, .slickbox .slickbox--1 .slick-next {
+    top: -25px;
+  }
+}
+
+.slickbox .slickbox--1 .slick-prev {
+  left: 970px;
+}
+
+.slickbox .slickbox--1 .slick-prev::before {
+  color: black;
+}
+
+@media only screen and (max-width: 767px) {
+  .slickbox .slickbox--1 .slick-prev {
+    left: inherit;
+    right: 120px;
+  }
+}
+
+.slickbox .slickbox--1 .slick-next {
+  left: 1020px;
+}
+
+.slickbox .slickbox--1 .slick-next::before {
+  color: black;
+}
+
+@media only screen and (max-width: 767px) {
+  .slickbox .slickbox--1 .slick-next {
+    right: 30px;
+  }
+}
+
+.slickbox .slickbox--1 p {
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+.slickbox .slickbox--2 .slick-slide {
+  padding: 0 85px;
+}
+
+@media only screen and (max-width: 767px) {
+  .slickbox .slickbox--2 .slick-slide {
+    padding: 0;
+  }
+}
+
+.slickbox .slickbox--2 .slick-prev, .slickbox .slickbox--2 .slick-next {
+  top: -10%;
+}
+
+.slickbox .slickbox--2 .slick-prev {
+  left: 900px;
+}
+
+.slickbox .slickbox--2 .slick-prev::before {
+  color: black;
+}
+
+.slickbox .slickbox--2 .slick-next {
+  left: 950px;
+}
+
+.slickbox .slickbox--2 .slick-next::before {
+  color: black;
+}
+
+.slickbox .slickbox--2 h2 {
+  margin-bottom: 25px;
+}
+
+.slickbox .slickbox--2 .text-card {
+  padding: 30px 25px;
+  background-color: #fff;
+  position: relative;
+  bottom: 40px;
+  left: 20px;
+}
+/*# sourceMappingURL=mend.css.map */

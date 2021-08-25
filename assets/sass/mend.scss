@@ -1,0 +1,92 @@
+@mixin mobile{
+	@media only screen and (max-width: 767px){
+		@content;
+	}
+}
+
+.slickbox{
+    margin: 50px auto 100px;
+    @include mobile {
+        margin-top: 30px;
+    }
+    img{
+        display: block;
+        width: 100%;
+    }
+
+    .slickbox--1{
+        .slick-slide{
+            padding: 0 15px;
+            @include mobile {
+                padding: 0 6px;
+            }
+        }
+
+        .slick-prev, .slick-next{
+            top: -10%;
+            @include mobile {
+                top: -25px;
+            }
+        }
+        .slick-prev {
+            left: 970px;
+            &::before{
+                color: black;
+            }
+            @include mobile {
+                left: inherit;
+                right: 120px;
+            }
+            
+        }
+
+        .slick-next {
+            left: 1020px;
+            &::before{
+                color: black;
+            }
+            @include mobile {
+                right: 30px;
+            }
+        }
+        p{
+            margin-left: 30px;
+            margin-top: 20px;
+        }
+    }
+    .slickbox--2{
+        .slick-slide{
+            padding: 0 85px;
+            @include mobile {
+                padding: 0;
+            }
+        }
+        
+        .slick-prev, .slick-next{
+            top: -10%;
+        }
+        .slick-prev {
+            left: 900px;
+            &::before{
+                color: black;
+            }
+        }
+        .slick-next {
+            left: 950px;
+            &::before{
+                color: black;
+            }
+        }
+
+        h2 {
+            margin-bottom: 25px;
+        }
+        .text-card {
+            padding: 30px 25px;
+            background-color: #fff;
+            position: relative;
+            bottom: 40px;
+            left: 20px;
+        }
+    }
+}

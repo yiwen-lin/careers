@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon/arrow-back/normal</title>
+    <g id="icon/arrow-back/normal" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" opacity="0.467866443" transform="translate(22.000000, 22.000000) scale(-1, 1) translate(-22.000000, -22.000000) " x="0" y="0" width="44" height="44"></rect>
+        <polyline id="Path" stroke="#000000" stroke-width="1.5" transform="translate(27.000000, 22.000000) scale(-1, 1) rotate(-45.000000) translate(-27.000000, -22.000000) " points="37 12 36.4646013 31.4646013 17 32"></polyline>
+    </g>
+</svg>
