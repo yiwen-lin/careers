@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>icon/arrow-more/up</title>
-    <g id="icon/arrow-more/up" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <rect id="Rectangle" x="0" y="0" width="44" height="44"></rect>
-        <polyline id="Path" stroke="#FFFFFF" stroke-width="1.5" transform="translate(22.000000, 23.964286) rotate(-135.000000) translate(-22.000000, -23.964286) " points="25.9285714 20.0357143 25.7182362 27.6825219 18.0714286 27.8928571"></polyline>
-    </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.4.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 12.1 6.8" style="enable-background:new 0 0 12.1 6.8;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#FFFFFF;stroke-width:1.5;}
+</style>
+<polyline id="Path" class="st0" points="0.5,6.3 6.1,1 11.6,6.3 "/>
 </svg>

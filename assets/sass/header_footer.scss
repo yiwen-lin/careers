@@ -439,7 +439,7 @@ p {
   padding-top: 20px;
   h5 {
     &::before {
-      content: url(../images/down-arrow.svg);
+      content: url(../images/icon/icon_arrow-more_down.svg);
       float: right;
       transition: all 0.5s;
       height: 12px;
@@ -449,7 +449,7 @@ p {
   }
   h5.active{
       &::before {
-        content: url(../images/up-arrow.svg);
+        content: url(../images/icon/icon_arrow-more_up.svg);
       }
     
   }

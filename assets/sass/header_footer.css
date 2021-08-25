@@ -410,7 +410,7 @@ p {
 }
 
 .expandableCollapsibleDiv h5::before {
-  content: url(../images/down-arrow.svg);
+  content: url(../images/icon/icon_arrow-more_down.svg);
   float: right;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -420,7 +420,7 @@ p {
 }
 
 .expandableCollapsibleDiv h5.active::before {
-  content: url(../images/up-arrow.svg);
+  content: url(../images/icon/icon_arrow-more_up.svg);
 }
 
 .expandableCollapsibleDiv:nth-child(1) {
