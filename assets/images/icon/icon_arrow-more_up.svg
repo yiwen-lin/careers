@@ -3,7 +3,9 @@
 <svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 12.1 6.8" style="enable-background:new 0 0 12.1 6.8;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:none;stroke:#FFFFFF;stroke-width:1.5;}
+	.st0{fill:#FFFFFF;}
 </style>
-<polyline id="Path" class="st0" points="0.5,6.3 6.1,1 11.6,6.3 "/>
+<g id="Path">
+	<polygon class="st0" points="1,6.8 0,5.8 6.1,0 12.1,5.8 11.1,6.8 6.1,2 	"/>
+</g>
 </svg>

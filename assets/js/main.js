@@ -12,7 +12,7 @@ $(document).ready(function() {
     });
     $('.btn-welfare').click(function() {
         $('html, body').animate({
-        scrollTop: welfare.top + 100
+        scrollTop: welfare.top + 450
         }, 700);
         return false;
     }); 

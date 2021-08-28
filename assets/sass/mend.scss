@@ -5,9 +5,9 @@
 }
 
 .slickbox{
-    margin: 50px auto 100px;
+    margin: 0px auto;
     @include mobile {
-        margin-top: 30px;
+        // margin-top: 0px;
     }
     img{
         display: block;
@@ -23,58 +23,76 @@
         }
 
         .slick-prev, .slick-next{
-            top: -10%;
+            top: -80px;
             @include mobile {
-                top: -25px;
+                top: -56px;
             }
         }
         .slick-prev {
-            left: 970px;
+            left: 68%;
             &::before{
                 color: black;
             }
             @include mobile {
                 left: inherit;
-                right: 120px;
+                right: 128px;
             }
             
         }
 
         .slick-next {
-            left: 1020px;
+            left: 76%;
             &::before{
                 color: black;
             }
             @include mobile {
+                left: inherit;
                 right: 30px;
             }
         }
         p{
             margin-left: 30px;
             margin-top: 20px;
+            @include mobile {
+                margin-top: 15px;
+            }
         }
     }
+
+
     .slickbox--2{
         .slick-slide{
-            padding: 0 85px;
+            padding: 0 42px;
             @include mobile {
                 padding: 0;
             }
         }
         
         .slick-prev, .slick-next{
-            top: -10%;
+            top: -80px;
+            @include mobile {
+                top: -56px;
+            }
         }
+
         .slick-prev {
-            left: 900px;
+            left: 76.5%;
             &::before{
                 color: black;
             }
+            @include mobile {
+                left: inherit;
+                right: 100px;
+            }
         }
         .slick-next {
-            left: 950px;
+            left: 87.8%;
             &::before{
                 color: black;
+            }
+            @include mobile {
+                left: inherit;
+                right: 0;
             }
         }
 
@@ -87,6 +105,29 @@
             position: relative;
             bottom: 40px;
             left: 20px;
+            @include mobile {
+                bottom: 0;
+                left: 0;
+            }
         }
+    }
+}
+.card-wrap {
+    padding-bottom: 100px;
+    @include mobile {
+        padding-bottom: 60px;
+    }
+
+    h1 {
+        margin-bottom: 40px;
+        @include mobile {
+            margin-bottom: 20px;
+        }
+    }
+}
+.slide-wrap {
+    margin-top: 80px;
+    @include mobile {
+        margin-top: 60px;
     }
 }

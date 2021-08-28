@@ -35,12 +35,12 @@ p {
   font-weight: 300;
   line-height: 1.78;
   margin-top: 0px;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
   text-align: justify;
 }
 
-p:last-child {
-  margin-bottom: 0;
+p + p {
+  margin-top: 30px;
 }
 
 h1 {
@@ -100,6 +100,12 @@ h3 {
   position: absolute;
 }
 
+@media only screen and (max-width: 767px) {
+  .slogan {
+    height: 90px;
+  }
+}
+
 .slogan.slogan-125 {
   height: 125px;
   bottom: 30px;
@@ -114,6 +120,12 @@ h3 {
 
 .slogan.slogan-164 {
   height: 164px;
+}
+
+@media only screen and (max-width: 767px) {
+  .slogan.slogan-164 {
+    height: 95px;
+  }
 }
 
 .buttons-square {
@@ -220,10 +232,8 @@ h3 {
   display: block;
 }
 
-.index-op .join-btn a::before {
+.index-op .join-btn a .icon-icon_arrow {
   display: inline-block;
-  content: url(../images/icon/icon_arrow.svg);
-  width: 20px;
   margin-right: 20px;
   -webkit-transition: transform 0.3s ease-out;
   -webkit-transition: -webkit-transform 0.3s ease-out;
@@ -232,8 +242,14 @@ h3 {
   transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
 }
 
+@media only screen and (max-width: 767px) {
+  .index-op .join-btn a .icon-icon_arrow {
+    margin-right: 10px;
+  }
+}
+
 @media only screen and (min-width: 767px) {
-  .index-op .join-btn a:hover::before {
+  .index-op .join-btn a:hover .icon-icon_arrow {
     -webkit-transform: translateX(8px);
     transform: translateX(8px);
   }
@@ -835,6 +851,15 @@ h3 {
   }
 }
 
+@media only screen and (max-width: 767px) {
+  .about-us-page .group-title-container {
+    padding: 0;
+  }
+  .about-us-page .group-title {
+    padding: 0;
+  }
+}
+
 .about-us-page .group-block {
   position: relative;
 }
@@ -871,5 +896,250 @@ h3 {
     margin-top: 20px;
     margin-bottom: 40px;
   }
+}
+
+.career-page {
+  background-color: #f1f1f1;
+}
+
+.career-page section.s1 {
+  padding-bottom: 65px;
+}
+
+@media only screen and (max-width: 767px) {
+  .career-page section.s1 {
+    padding-bottom: 40px;
+  }
+}
+
+.career-page section.s2 {
+  padding-bottom: 65px;
+}
+
+@media only screen and (max-width: 767px) {
+  .career-page section.s2 {
+    padding-bottom: 40px;
+  }
+}
+
+.career-page .career-op {
+  width: 100%;
+  height: 560px;
+  position: relative;
+}
+
+@media only screen and (max-width: 767px) {
+  .career-page .career-op {
+    height: 450px;
+  }
+}
+
+.career-page .career-op::after {
+  display: block;
+  content: '';
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-bottom: 30px solid #f1f1f1;
+  border-left: 100vw solid transparent;
+}
+
+.career-page .career-op .slogan {
+  bottom: 90px;
+}
+
+@media only screen and (max-width: 767px) {
+  .career-page .career-op .slogan {
+    bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .career-page .career-op .container {
+    padding: 0;
+  }
+}
+
+.career-page .preface {
+  padding-top: 60px;
+}
+
+@media only screen and (max-width: 767px) {
+  .career-page .preface {
+    padding-top: 30px;
+  }
+}
+
+.career-page .career-img img {
+  width: 83vw;
+  height: 780px;
+}
+
+@media only screen and (max-width: 767px) {
+  .career-page .career-img img {
+    width: 100%;
+    height: 390px;
+  }
+}
+
+.career-page .career-img.career-img-right {
+  text-align: right;
+}
+
+.career-page .career-container {
+  background-color: #fff;
+  position: relative;
+  top: -45px;
+}
+
+@media only screen and (max-width: 767px) {
+  .career-page .career-container {
+    top: -20px;
+  }
+}
+
+.career-page .career-container::after {
+  display: block;
+  content: '';
+  width: 100%;
+  height: 20px;
+  background-color: #fff;
+  position: absolute;
+  top: -20px;
+  left: 0;
+  -webkit-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+          clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+}
+
+.career-page .career-container.container-left::after {
+  -webkit-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+          clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+}
+
+.career-page .career-container.container-right::after {
+  -webkit-clip-path: polygon(0 0, 0% 100%, 100% 100%);
+          clip-path: polygon(0 0, 0% 100%, 100% 100%);
+}
+
+.career-page .group-block {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+@media only screen and (max-width: 767px) {
+  .career-page .group-block {
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .career-page .group-block h3.career-title {
+    margin-bottom: 20px;
+  }
+}
+
+.career-page .group-block h1 {
+  margin-bottom: 20px;
+}
+
+.career-page .h1-margin {
+  margin-top: 100px;
+}
+
+@media only screen and (max-width: 767px) {
+  .career-page .h1-margin {
+    margin-top: 80px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .career-page .s-spacing {
+    padding: 0;
+  }
+}
+
+.career-page .s-spacing img {
+  display: block;
+  width: 100%;
+  height: 390px;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+  .career-page .s-spacing img {
+    height: 150px;
+  }
+}
+
+.career-page .s-join h1 {
+  margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 767px) {
+  .career-page .s-join h1 {
+    margin-bottom: 20px;
+  }
+}
+
+.career-page .s-join h3 {
+  margin-bottom: 15px;
+}
+
+.career-page .s-join ul li {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.78;
+  padding-left: 20px;
+}
+
+.career-page .s-join ul li::before {
+  content: " l ";
+  display: inline-block;
+  opacity: .5;
+  position: relative;
+  left: -20px;
+}
+
+.career-page .s-join .join-btn {
+  text-align: right;
+}
+
+.career-page .s-join .join-btn a {
+  color: #d60c18;
+  font-size: 18px;
+  letter-spacing: 3px;
+  font-weight: 500;
+  line-height: 1;
+  display: block;
+}
+
+.career-page .s-join .join-btn a .icon-icon_arrow {
+  display: inline-block;
+  margin-right: 20px;
+  -webkit-transition: transform 0.3s ease-out;
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+}
+
+@media only screen and (max-width: 767px) {
+  .career-page .s-join .join-btn a .icon-icon_arrow {
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (min-width: 767px) {
+  .career-page .s-join .join-btn a:hover .icon-icon_arrow {
+    -webkit-transform: translateX(8px);
+    transform: translateX(8px);
+  }
+}
+
+.career-page-reporters .career-op {
+  background: center center url(../images/bg.jpg);
+  background-size: cover;
 }
 /*# sourceMappingURL=main.css.map */

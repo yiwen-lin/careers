@@ -41,11 +41,14 @@ p {
 	font-weight: 300;
 	line-height: 1.78;
 	margin-top: 0px;
-	margin-bottom: 30px;
+	margin-bottom: 0px;
 	text-align: justify;
-	&:last-child {
-		margin-bottom: 0;
-	}
+	// &:last-child {
+	// 	margin-bottom: 0;
+	// }
+}
+p+p {
+	margin-top: 30px;
 }
 
 h1 {
@@ -97,6 +100,9 @@ h3 {
 	display: block;
 	height: 156px;
 	position: absolute;
+	@include mobile {
+		height: 90px;
+	}
 	&.slogan-125 {
 		height: 125px;
 		bottom: 30px;
@@ -107,6 +113,9 @@ h3 {
 	}
 	&.slogan-164 {
 		height: 164px;
+		@include mobile {
+			height: 95px;
+		}
 	}
 }
 
@@ -199,23 +208,21 @@ h3 {
 			font-weight: 500;
 			line-height: 1;
 			display: block;
-			&::before {
+			.icon-icon_arrow {
 				display: inline-block;
-				content: url(../images/icon/icon_arrow.svg);
-				width: 20px;
 				margin-right: 20px;
 				-webkit-transition: transform 0.3s ease-out;
 				-moz-transition: transform 0.3s ease-out;
 				-ms-transition: transform 0.3s ease-out;
 				-o-transition: transform 0.3s ease-out;
 				transition: transform 0.3s ease-out;
+				@include mobile {
+					margin-right: 10px;
+				}
 			}
 			@media only screen and (min-width: 767px) {		
 				&:hover {
-					// color: #0c5449;
-					// background-color: #f6f3ed;
-			
-					&::before {
+					.icon-icon_arrow {
 						-webkit-transform: translateX(8px);
 						-moz-transform: translateX(8px);
 						-ms-transform: translateX(8px);
@@ -670,8 +677,17 @@ h3 {
 			@include mobile {
 				margin-top: 24px;
 			}
-		}	
+		}
 	}
+	@include mobile {
+		.group-title-container {	
+			padding: 0;
+		}
+		.group-title {
+			padding: 0;
+		}
+	}
+		
 	.group-block {
 		position: relative;
 	}
@@ -702,6 +718,214 @@ h3 {
 	}
 
 }
-
-
 //about us end =================================
+
+
+//career start =================================
+//career 共用樣式
+.career-page {
+	background-color: #f1f1f1;
+	section{
+		&.s1 {
+			padding-bottom: 65px;
+			@include mobile {
+				padding-bottom: 40px;
+			}
+		}
+		&.s2 {
+			padding-bottom: 65px;
+			@include mobile {
+				padding-bottom: 40px;
+			}
+		}
+	}
+
+	//op
+	.career-op {
+		width: 100%;
+		height: 560px;
+		position: relative;
+		@include mobile {
+			height: 450px ;
+		}
+		&::after {
+			display: block;
+			content: '';
+			width: 100%;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			border-bottom: 30px solid #f1f1f1;
+			border-left: 100vw solid transparent;
+		}
+		.slogan {
+			bottom: 90px;
+			@include mobile {
+				bottom: 50px;
+			}
+		}
+		.container {
+			@include mobile {
+				padding: 0;
+			}
+		}
+	}
+
+	//內容
+	.preface {
+		padding-top: 60px;
+		@include mobile {
+			padding-top: 30px;
+		}
+	}
+	.career-img {
+		img {
+			width: 83vw;
+			height: 780px;
+			@include mobile {
+				width: 100%;
+				height: 390px ;
+			}
+		}
+		&.career-img-right {
+			text-align: right;
+		}
+	}
+	.career-container {
+		background-color: #fff;
+		position: relative;
+		top: -45px;
+		@include mobile {
+			top: -20px;
+		}
+		&::after {
+			display: block;
+			content: '';
+			width: 100%;
+			height: 20px;
+			background-color: #fff;
+			position: absolute;
+			top: -20px;
+			left: 0;
+			clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+		}
+		&.container-left {
+			&::after {
+				clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+			}
+		}
+		&.container-right {
+			&::after {
+				clip-path: polygon(0 0, 0% 100%, 100% 100%);
+			}
+		}
+	}
+	.group-block {
+		margin-top: 60px;
+		margin-bottom: 60px;
+		@include mobile {
+			margin-top: 30px;
+			margin-bottom: 40px;
+		}
+		h3.career-title {
+			@include mobile {
+				margin-bottom: 20px;
+			}
+		}
+		h1 {
+			margin-bottom: 20px;
+		}
+	}
+	.h1-margin {
+		margin-top: 100px;
+		@include mobile {
+			margin-top: 80px;
+		}
+	}
+	.s-spacing {
+		@include mobile {
+			padding: 0;
+		}	
+		img {
+			display: block;
+			width: 100%;
+			height: 390px;
+			margin-bottom: 20px;
+			@include mobile {
+				height: 150px;
+			}
+		}
+	}
+
+	.s-join {
+		h1 {
+			margin-bottom: 40px;
+			@include mobile {
+				margin-bottom: 20px;
+			}
+		}
+		h3 {
+			margin-bottom: 15px;
+		}
+		ul {
+			li {
+				font-weight: 300;
+				font-size: 18px;
+				line-height: 1.78;
+				padding-left: 20px;
+				&::before {
+					content: " l ";
+					display: inline-block;
+					opacity: .5;
+					position: relative;
+					left: -20px;
+				}
+			}
+		}
+		.join-btn {
+			text-align: right;
+			a {
+				color: $color;
+				font-size: 18px;
+				letter-spacing: 3px;
+				font-weight: 500;
+				line-height: 1;
+				display: block;
+				.icon-icon_arrow {
+					display: inline-block;
+					margin-right: 20px;
+					-webkit-transition: transform 0.3s ease-out;
+					-moz-transition: transform 0.3s ease-out;
+					-ms-transition: transform 0.3s ease-out;
+					-o-transition: transform 0.3s ease-out;
+					transition: transform 0.3s ease-out;
+					@include mobile {
+						margin-right: 10px;
+					}
+				}
+				@media only screen and (min-width: 767px) {		
+					&:hover {
+						.icon-icon_arrow {
+							-webkit-transform: translateX(8px);
+							-moz-transform: translateX(8px);
+							-ms-transform: translateX(8px);
+							-o-transform: translateX(8px);
+							transform: translateX(8px);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+//職系頁：記者 start
+.career-page-reporters {
+	.career-op {
+		background: center center url(../images/bg.jpg);
+		background-size: cover;
+
+	}
+}
+//職系頁：記者 end

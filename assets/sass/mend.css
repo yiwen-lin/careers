@@ -1,11 +1,5 @@
 .slickbox {
-  margin: 50px auto 100px;
-}
-
-@media only screen and (max-width: 767px) {
-  .slickbox {
-    margin-top: 30px;
-  }
+  margin: 0px auto;
 }
 
 .slickbox img {
@@ -24,17 +18,17 @@
 }
 
 .slickbox .slickbox--1 .slick-prev, .slickbox .slickbox--1 .slick-next {
-  top: -10%;
+  top: -80px;
 }
 
 @media only screen and (max-width: 767px) {
   .slickbox .slickbox--1 .slick-prev, .slickbox .slickbox--1 .slick-next {
-    top: -25px;
+    top: -56px;
   }
 }
 
 .slickbox .slickbox--1 .slick-prev {
-  left: 970px;
+  left: 68%;
 }
 
 .slickbox .slickbox--1 .slick-prev::before {
@@ -44,12 +38,12 @@
 @media only screen and (max-width: 767px) {
   .slickbox .slickbox--1 .slick-prev {
     left: inherit;
-    right: 120px;
+    right: 128px;
   }
 }
 
 .slickbox .slickbox--1 .slick-next {
-  left: 1020px;
+  left: 76%;
 }
 
 .slickbox .slickbox--1 .slick-next::before {
@@ -58,6 +52,7 @@
 
 @media only screen and (max-width: 767px) {
   .slickbox .slickbox--1 .slick-next {
+    left: inherit;
     right: 30px;
   }
 }
@@ -67,8 +62,14 @@
   margin-top: 20px;
 }
 
+@media only screen and (max-width: 767px) {
+  .slickbox .slickbox--1 p {
+    margin-top: 15px;
+  }
+}
+
 .slickbox .slickbox--2 .slick-slide {
-  padding: 0 85px;
+  padding: 0 42px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -78,23 +79,43 @@
 }
 
 .slickbox .slickbox--2 .slick-prev, .slickbox .slickbox--2 .slick-next {
-  top: -10%;
+  top: -80px;
+}
+
+@media only screen and (max-width: 767px) {
+  .slickbox .slickbox--2 .slick-prev, .slickbox .slickbox--2 .slick-next {
+    top: -56px;
+  }
 }
 
 .slickbox .slickbox--2 .slick-prev {
-  left: 900px;
+  left: 76.5%;
 }
 
 .slickbox .slickbox--2 .slick-prev::before {
   color: black;
 }
 
+@media only screen and (max-width: 767px) {
+  .slickbox .slickbox--2 .slick-prev {
+    left: inherit;
+    right: 100px;
+  }
+}
+
 .slickbox .slickbox--2 .slick-next {
-  left: 950px;
+  left: 87.8%;
 }
 
 .slickbox .slickbox--2 .slick-next::before {
   color: black;
+}
+
+@media only screen and (max-width: 767px) {
+  .slickbox .slickbox--2 .slick-next {
+    left: inherit;
+    right: 0;
+  }
 }
 
 .slickbox .slickbox--2 h2 {
@@ -107,5 +128,42 @@
   position: relative;
   bottom: 40px;
   left: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+  .slickbox .slickbox--2 .text-card {
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.card-wrap {
+  padding-bottom: 100px;
+}
+
+@media only screen and (max-width: 767px) {
+  .card-wrap {
+    padding-bottom: 60px;
+  }
+}
+
+.card-wrap h1 {
+  margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 767px) {
+  .card-wrap h1 {
+    margin-bottom: 20px;
+  }
+}
+
+.slide-wrap {
+  margin-top: 80px;
+}
+
+@media only screen and (max-width: 767px) {
+  .slide-wrap {
+    margin-top: 60px;
+  }
 }
 /*# sourceMappingURL=mend.css.map */
