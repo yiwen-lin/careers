@@ -4,7 +4,7 @@
 	}
 }
 
-.slickbox{
+.slickbox {
     margin: 0px auto;
     @include mobile {
         // margin-top: 0px;
@@ -98,6 +98,9 @@
 
         h2 {
             margin-bottom: 25px;
+            @include mobile {
+                margin-bottom: 10px;
+            }
         }
         .text-card {
             padding: 30px 25px;
@@ -109,6 +112,14 @@
                 bottom: 0;
                 left: 0;
             }
+        }
+    }
+}
+.about-us-page {
+    .slickbox {
+        margin: 100px auto;
+        @include mobile {
+            // margin: 60px auto;
         }
     }
 }

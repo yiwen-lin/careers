@@ -177,6 +177,8 @@ h3 {
 	position: relative;
 	@include mobile {
 		height: calc(100vh - 64px);
+		background-image: url(../images/web_img_index/index_op-mb.jpg);
+		background-size: cover;
 	}
 
 	.slogan-op {
@@ -514,6 +516,8 @@ h3 {
 	position: relative;
 	@include mobile {
 		height: 450px;
+		background-image: url(../images/web_img_about-us/about-us_kv-mb.jpg);
+		background-size: cover;
 	}
 }
 .about-us-page {
@@ -757,6 +761,9 @@ h3 {
 			left: 0;
 			border-bottom: 30px solid #f1f1f1;
 			border-left: 100vw solid transparent;
+			@include mobile {
+				border-bottom: 18px solid #f1f1f1;
+			}
 		}
 		.slogan {
 			bottom: 90px;
@@ -782,9 +789,10 @@ h3 {
 		img {
 			width: 83vw;
 			height: 780px;
+			object-fit: cover;
 			@include mobile {
 				width: 100%;
-				height: 390px ;
+				height: 390px;
 			}
 		}
 		&.career-img-right {
@@ -805,9 +813,13 @@ h3 {
 			height: 20px;
 			background-color: #fff;
 			position: absolute;
-			top: -20px;
+			top: -19px;
 			left: 0;
 			clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+			@include mobile {
+				height: 15px;
+				top: -14px;
+			}
 		}
 		&.container-left {
 			&::after {
@@ -851,6 +863,7 @@ h3 {
 			width: 100%;
 			height: 390px;
 			margin-bottom: 20px;
+			object-fit: cover;
 			@include mobile {
 				height: 150px;
 			}
@@ -919,13 +932,114 @@ h3 {
 	}
 }
 
-
-//職系頁：記者 start
-.career-page-reporters {
-	.career-op {
-		background: center center url(../images/bg.jpg);
-		background-size: cover;
-
+// 職系頁個別設定
+.career-page {
+	//記者
+	&.career-page-reporters {
+		.career-op {
+			background: center center url(../images/web_img_career/reporters_kv.jpg);
+			background-size: cover;
+			@include mobile {
+				background: center center url(../images/web_img_career/reporters_kv-mb.jpg);
+				background-size: cover;
+			}
+		}
 	}
+	//維運管理
+	&.career-page-support {
+		.career-op {
+			background: center center url(../images/web_img_career/support-and-operation_kv.jpg);
+			background-size: cover;
+			@include mobile {
+				background: center center url(../images/web_img_career/support-and-operation_kv-mb.jpg);
+				background-size: cover;
+			}
+		}
+	}
+	//數據工程
+	&.career-page-data {
+		.career-op {
+			background: center center url(../images/web_img_career/data_kv.jpg);
+			background-size: cover;
+			@include mobile {
+				background: center center url(../images/web_img_career/data_kv-mb.jpg);
+				background-size: cover;
+			}
+		}
+		.s-join {
+			padding-top: 0;
+		}
+	
+	}
+	//數位產品
+	&.career-page-digital {
+		.career-op {
+			background: center center url(../images/web_img_career/digital-product_kv.jpg);
+			background-size: cover;
+			@include mobile {
+				background: center center url(../images/web_img_career/digital-product_kv-mb.jpg);
+				background-size: cover;
+			}
+		}
+		.s-join {
+			padding-top: 0;
+		}
+	}
+	//內容製作
+	&.career-page-content {
+		.career-op {
+			background: center center url(../images/web_img_career/content-product_kv.jpg);
+			background-size: cover;
+			@include mobile {
+				background: center center url(../images/web_img_career/content-product_kv-mb.jpg);
+				background-size: cover;
+			}
+		}
+		.s-join {
+			padding-top: 0;
+		}
+	}
+	//業務
+	&.career-page-sales {
+		.career-op {
+			background: center center url(../images/web_img_career/sales_kv.jpg);
+			background-size: cover;
+			@include mobile {
+				background: center center url(../images/web_img_career/sales_kv-mb.jpg);
+				background-size: cover;
+			}
+		}
+		.s-join {
+			padding-top: 0;
+		}
+	}
+	//行銷
+	&.career-page-marketing {
+		.career-op {
+			background: center center url(../images/web_img_career/marketing_kv.jpg);
+			background-size: cover;
+			@include mobile {
+				background: center center url(../images/web_img_career/marketing_kv-mb.jpg);
+				background-size: cover;
+			}
+		}
+		.s-join {
+			padding-top: 0;
+		}
+	}
+	//資訊工程
+	&.career-page-engineering{
+		.career-op {
+			background: center center url(../images/web_img_career/engineering_kv.jpg);
+			background-size: cover;
+			@include mobile {
+				background: center center url(../images/web_img_career/engineering_kv-mb.jpg);
+				background-size: cover;
+			}
+		}
+		.s-join {
+			padding-top: 0;
+		}
+	}
+
 }
-//職系頁：記者 end

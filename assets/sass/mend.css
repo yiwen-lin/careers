@@ -122,6 +122,12 @@
   margin-bottom: 25px;
 }
 
+@media only screen and (max-width: 767px) {
+  .slickbox .slickbox--2 h2 {
+    margin-bottom: 10px;
+  }
+}
+
 .slickbox .slickbox--2 .text-card {
   padding: 30px 25px;
   background-color: #fff;
@@ -135,6 +141,10 @@
     bottom: 0;
     left: 0;
   }
+}
+
+.about-us-page .slickbox {
+  margin: 100px auto;
 }
 
 .card-wrap {
