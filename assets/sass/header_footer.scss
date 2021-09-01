@@ -367,6 +367,9 @@ p {
   }
   .s-title {
       margin-top: 30px;
+      @include mobile {
+        margin-top: 35px;
+      }
   }
   ul {
     margin: 0 auto;

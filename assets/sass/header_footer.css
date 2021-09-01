@@ -330,6 +330,12 @@ p {
   margin-top: 30px;
 }
 
+@media only screen and (max-width: 1119px) {
+  .main-footer .s-title {
+    margin-top: 35px;
+  }
+}
+
 .main-footer ul {
   margin: 0 auto;
 }
