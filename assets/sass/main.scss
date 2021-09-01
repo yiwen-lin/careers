@@ -176,8 +176,8 @@ h3 {
 	height: calc(100vh - 95px);
 	position: relative;
 	@include mobile {
-		height: calc(100vh - 64px);
-		background-image: url(../images/web_img_index/index_op-mb.jpg);
+		height: 550px;
+		background-image: url(../images/web_img_index/index_op_mb1650.jpg);
 		background-size: cover;
 	}
 
@@ -201,7 +201,7 @@ h3 {
 		padding: 20px;
 		text-align: center;
 		@include mobile {
-			padding: 15px;
+			padding: 14px;
 		}
 		a {
 			color: #fff;

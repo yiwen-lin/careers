@@ -189,8 +189,8 @@ h3 {
 
 @media only screen and (max-width: 767px) {
   .index-op {
-    height: calc(100vh - 64px);
-    background-image: url(../images/web_img_index/index_op-mb.jpg);
+    height: 550px;
+    background-image: url(../images/web_img_index/index_op_mb1650.jpg);
     background-size: cover;
   }
 }
@@ -221,7 +221,7 @@ h3 {
 
 @media only screen and (max-width: 767px) {
   .index-op .join-btn {
-    padding: 15px;
+    padding: 14px;
   }
 }
 
