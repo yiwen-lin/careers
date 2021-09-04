@@ -912,6 +912,7 @@ h3 {
 
 @media only screen and (max-width: 767px) {
   .career-page section.s1 {
+    padding-top: 80px;
     padding-bottom: 40px;
   }
 }

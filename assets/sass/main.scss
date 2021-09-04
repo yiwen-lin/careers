@@ -733,6 +733,7 @@ h3 {
 		&.s1 {
 			padding-bottom: 65px;
 			@include mobile {
+				padding-top: 80px;
 				padding-bottom: 40px;
 			}
 		}

@@ -75,7 +75,7 @@ $color2: #002851;
   @include mobile {
     padding-top: 25px;
     max-height: 64px;
-    padding-top:20px;
+    padding-top: 18px;
     padding-bottom: 26px;
   }
   .row {
@@ -94,21 +94,11 @@ $color2: #002851;
   // max-height: 100vh ;
   // height: 100vh ;
   .mobile-toggle {
-    transform: rotate(-90deg);
-    -webkit-transform: rotate(-90deg);
+
   }
 }
 
-// .sticky {
-//   background-color: #fff;
-//   opacity: 1;
-//   top: 0px;
-//   border-bottom: 1px solid lighten($color, 30%);
-// }
-
 .logo {
-  // width: 90px;
-  // font-size: 25px;
   float: left;
   display: block;
   line-height: 1;
@@ -165,7 +155,6 @@ nav {
         width: 100%;
         padding: 10px 0;
         margin: 0;
-
       }
     }
     a {
@@ -179,28 +168,76 @@ nav {
   }
 }
 
-
+// icon change
+/* mixin */
+@mixin crossB($property, $val){
+  -webkit-#{$property}: $val;
+  -moz-#{$property}: $val;
+  -ms-#{$property}: $val;
+  #{$property}: $val;
+}
 .mobile-toggle {
   display: none;
-  cursor: pointer;
   font-size: 20px;
   position: absolute;
   right: 30px;
   top: 0;
-  -webkit-transition: all 200ms ease-in;
-  -moz-transition: all 200ms ease-in;
-  transition: all 200ms ease-in;
+  width:    25px;
+  height:   25px;
+  margin:   auto ;
+  cursor:   pointer;
+  @include  crossB(transform, rotate(0deg));
+  @include  crossB(transition, .3s ease-in-out);
   @include mobile {
-    display: block;
+    display: inline-block;
   }
 
   span {
-    width: 20px;
-    height: 1px;
-    margin: 7px auto;
-    // border-radius: 1000px;
-    background: #000;
-    display: block;
+    display:       block;
+    position:      absolute;
+    height:        1px;
+    width:         100%;
+    background-color:  #000;
+    border-radius: 10px;
+    opacity:       1;
+    // left:          0;
+    @include       crossB(transform, rotate(0deg));
+    @include       crossB(transition, .25s ease-in-out);
+  }
+
+  span:nth-child(1) {
+    top:     15%;
+    @include crossB(transform-origin, left center);
+  }
+
+  span:nth-child(2) {
+    top:     45%;
+    @include crossB(transform-origin, left center);
+  }
+
+  span:nth-child(3) {
+    top:     75%;
+    @include crossB(transform-origin, left center);
+  }
+}
+
+.mobile-toggle.open-nav {
+  span:nth-child(1) {
+    top:     10%;
+    left:    15%;
+    @include crossB(transform, rotate(45deg));
+  }
+
+  span:nth-child(2) {
+    // width:   0;
+    // left:    -100%;
+    opacity: 0;
+  }
+
+  span:nth-child(3) {
+    left:    15%;
+    top:     80%;
+    @include crossB(transform, rotate(-45deg));
   }
 }
 

@@ -18,6 +18,14 @@
   </header>
 
 <script>
+    // icon change
+    $('.mobile-toggle').click(function() {
+    if ($(this).hasClass('open-nav')) {
+        $(this).removeClass('open-nav');
+    } else {
+        $(this).addClass('open-nav');
+    }
+    });
 
     // Mobile Navigation
     $('.mobile-toggle').click(function() {
