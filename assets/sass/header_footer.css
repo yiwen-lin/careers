@@ -6,7 +6,7 @@
   font-weight: 700;
 }
 
-.join-us-page header nav ul li:nth-child(3) {
+.join-us-page header nav ul li:nth-child(3), .career-page header nav ul li:nth-child(3) {
   font-weight: 700;
 }
 
@@ -188,7 +188,6 @@ a {
 h1 {
   font-size: 30px;
   line-height: 1.8;
-  text-transform: uppercase;
 }
 
 p {
