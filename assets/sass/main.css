@@ -10,7 +10,7 @@ body {
   padding-top: 95px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   body {
     padding-top: 64px;
   }
@@ -20,7 +20,7 @@ section {
   padding: 100px 0;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   section {
     padding: 60px 0;
   }
@@ -52,7 +52,7 @@ h1 {
   color: #002851;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   h1 {
     font-size: 26px;
     margin-bottom: 15px;
@@ -66,7 +66,7 @@ h2 {
   margin-top: 0;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   h2 {
     font-size: 23px;
   }
@@ -80,7 +80,7 @@ h3 {
   margin-top: 0;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   h3 {
     font-size: 18px;
   }
@@ -100,7 +100,7 @@ h3 {
   position: absolute;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .slogan {
     height: 90px;
   }
@@ -111,7 +111,7 @@ h3 {
   bottom: 30px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .slogan.slogan-125 {
     height: 70px;
     left: 0;
@@ -122,7 +122,7 @@ h3 {
   height: 164px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .slogan.slogan-164 {
     height: 95px;
   }
@@ -151,6 +151,10 @@ h3 {
   z-index: 1;
 }
 
+.more-btn a {
+  color: #000;
+}
+
 .more-btn::after {
   position: absolute;
   content: "";
@@ -164,7 +168,7 @@ h3 {
   transition: all 0.3s ease;
 }
 
-.more-btn:hover {
+.more-btn:hover a {
   color: #fff;
 }
 
@@ -187,7 +191,7 @@ h3 {
   position: relative;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .index-op {
     height: 550px;
     background-image: url(../images/web_img_index/index_op_mb1650.jpg);
@@ -202,7 +206,7 @@ h3 {
   margin: 43px auto 0;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .index-op .slogan-op {
     width: 135px;
     margin-top: 25px;
@@ -219,7 +223,7 @@ h3 {
   text-align: center;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .index-op .join-btn {
     padding: 14px;
   }
@@ -244,7 +248,7 @@ h3 {
   transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .index-op .join-btn a .icon-icon_arrow {
     margin-right: 10px;
   }
@@ -267,7 +271,7 @@ h3 {
   text-align: center;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .foreword-block {
     margin-bottom: 40px;
   }
@@ -301,7 +305,7 @@ h3 {
   color: #fff;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .grid-container .item h1 {
     font-size: 32px;
   }
@@ -332,7 +336,7 @@ h3 {
           transform: scale(1.05);
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .grid-container .item1 {
     -ms-grid-column: 1;
     -ms-grid-column-span: 12;
@@ -358,7 +362,7 @@ h3 {
   transition: all 1s;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .grid-container .item2 .article-img-holder {
     background-position-y: -30px;
   }
@@ -369,7 +373,7 @@ h3 {
           transform: scale(1.05);
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .grid-container .item2 {
     -ms-grid-column: 1;
     -ms-grid-column-span: 12;
@@ -395,7 +399,7 @@ h3 {
   transition: all 1s;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .grid-container .item3 .article-img-holder {
     background-position-x: -50px;
   }
@@ -406,7 +410,7 @@ h3 {
           transform: scale(1.05);
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .grid-container .item3 {
     -ms-grid-column: 1;
     -ms-grid-column-span: 12;
@@ -437,7 +441,7 @@ h3 {
           transform: scale(1.05);
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .grid-container .item4 {
     -ms-grid-column: 1;
     -ms-grid-column-span: 12;
@@ -468,7 +472,7 @@ h3 {
           transform: scale(1.05);
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .grid-container .item5 {
     -ms-grid-column: 1;
     -ms-grid-column-span: 12;
@@ -499,7 +503,7 @@ h3 {
           transform: scale(1.05);
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .grid-container .item6 {
     -ms-grid-column: 1;
     -ms-grid-column-span: 12;
@@ -530,7 +534,7 @@ h3 {
           transform: scale(1.05);
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .grid-container .item7 {
     -ms-grid-column: 1;
     -ms-grid-column-span: 12;
@@ -561,7 +565,7 @@ h3 {
           transform: scale(1.05);
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .grid-container .item8 {
     -ms-grid-column: 1;
     -ms-grid-column-span: 12;
@@ -578,7 +582,7 @@ h3 {
   width: 100%;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .grid-container .article-text {
     top: 60px;
   }
@@ -589,7 +593,7 @@ h3 {
   height: 320px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .grid-container .article-img-holder {
     height: 175px;
   }
@@ -600,14 +604,14 @@ h3 {
   margin: 0 40px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .contact-text {
     margin-bottom: 15px;
     margin-top: 15px;
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .contact-text span {
     display: block;
   }
@@ -617,7 +621,7 @@ h3 {
   margin-right: 20px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .contact-text .text-front {
     margin: 0 auto;
   }
@@ -627,7 +631,7 @@ h3 {
   margin: 50px auto 0;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .logo-group {
     margin-top: 20px;
   }
@@ -639,7 +643,7 @@ h3 {
   margin: 0 48px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .logo-group a {
     display: block;
     margin: 0 0 40px;
@@ -654,7 +658,7 @@ h3 {
   height: 30px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .logo-group img {
     height: auto;
     width: 110px;
@@ -669,7 +673,7 @@ h3 {
   position: relative;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .about-op {
     height: 450px;
     background-image: url(../images/web_img_about-us/about-us_kv-mb.jpg);
@@ -682,7 +686,7 @@ h3 {
   margin-bottom: 40px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .about-us-page h1 {
     margin-bottom: 20px;
   }
@@ -692,7 +696,7 @@ h3 {
   margin-bottom: 80px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .about-us-page h2 {
     margin-bottom: 60px;
   }
@@ -748,7 +752,7 @@ h3 {
   transition: .3s;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .navbar ul {
     width: 100%;
     bottom: 0;
@@ -786,7 +790,7 @@ h3 {
   margin-bottom: 50px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .group-block {
     margin-bottom: 0;
   }
@@ -811,7 +815,7 @@ h3 {
   font-weight: 300;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .group-class li span {
     padding: 0;
     display: block;
@@ -843,19 +847,19 @@ h3 {
   margin-bottom: 0;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .about-us-page .s2 h3 {
     margin-bottom: 20px;
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .about-us-page .s2 .inner-h3 {
     margin-top: 24px;
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .about-us-page .group-title-container {
     padding: 0;
   }
@@ -876,7 +880,7 @@ h3 {
   padding-right: 90px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .about-us-page .inner {
     position: inherit;
     top: 0;
@@ -895,7 +899,7 @@ h3 {
   margin-bottom: 10px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .about-us-page .inner-h2 {
     margin-top: 20px;
     margin-bottom: 40px;
@@ -910,7 +914,7 @@ h3 {
   padding-bottom: 65px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .career-page section.s1 {
     padding-top: 80px;
     padding-bottom: 40px;
@@ -921,7 +925,7 @@ h3 {
   padding-bottom: 65px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .career-page section.s2 {
     padding-bottom: 40px;
   }
@@ -933,7 +937,7 @@ h3 {
   position: relative;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .career-page .career-op {
     height: 450px;
   }
@@ -950,7 +954,7 @@ h3 {
   border-left: 100vw solid transparent;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .career-page .career-op::after {
     border-bottom: 18px solid #f1f1f1;
   }
@@ -960,13 +964,13 @@ h3 {
   bottom: 90px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .career-page .career-op .slogan {
     bottom: 50px;
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .career-page .career-op .container {
     padding: 0;
   }
@@ -976,7 +980,7 @@ h3 {
   padding-top: 60px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .career-page .preface {
     padding-top: 30px;
   }
@@ -989,7 +993,7 @@ h3 {
      object-fit: cover;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .career-page .career-img img {
     width: 100%;
     height: 390px;
@@ -1006,7 +1010,7 @@ h3 {
   top: -45px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .career-page .career-container {
     top: -20px;
   }
@@ -1025,7 +1029,7 @@ h3 {
           clip-path: polygon(100% 0, 0% 100%, 100% 100%);
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .career-page .career-container::after {
     height: 15px;
     top: -14px;
@@ -1047,14 +1051,14 @@ h3 {
   margin-bottom: 60px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .career-page .group-block {
     margin-top: 30px;
     margin-bottom: 40px;
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .career-page .group-block h3.career-title {
     margin-bottom: 20px;
   }
@@ -1068,13 +1072,13 @@ h3 {
   margin-top: 100px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .career-page .h1-margin {
     margin-top: 80px;
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .career-page .s-spacing {
     padding: 0;
   }
@@ -1089,7 +1093,7 @@ h3 {
      object-fit: cover;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .career-page .s-spacing img {
     height: 150px;
   }
@@ -1099,7 +1103,7 @@ h3 {
   margin-bottom: 40px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .career-page .s-join h1 {
     margin-bottom: 20px;
   }
@@ -1147,7 +1151,7 @@ h3 {
   transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .career-page .s-join .join-btn a .icon-icon_arrow {
     margin-right: 10px;
   }
@@ -1165,7 +1169,7 @@ h3 {
   background-size: cover;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .career-page.career-page-reporters .career-op {
     background: center center url(../images/web_img_career/reporters_kv-mb.jpg);
     background-size: cover;
@@ -1177,7 +1181,7 @@ h3 {
   background-size: cover;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .career-page.career-page-support .career-op {
     background: center center url(../images/web_img_career/support-and-operation_kv-mb.jpg);
     background-size: cover;
@@ -1189,7 +1193,7 @@ h3 {
   background-size: cover;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .career-page.career-page-data .career-op {
     background: center center url(../images/web_img_career/data_kv-mb.jpg);
     background-size: cover;
@@ -1205,7 +1209,7 @@ h3 {
   background-size: cover;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .career-page.career-page-digital .career-op {
     background: center center url(../images/web_img_career/digital-product_kv-mb.jpg);
     background-size: cover;
@@ -1221,7 +1225,7 @@ h3 {
   background-size: cover;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .career-page.career-page-content .career-op {
     background: center center url(../images/web_img_career/content-product_kv-mb.jpg);
     background-size: cover;
@@ -1237,7 +1241,7 @@ h3 {
   background-size: cover;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .career-page.career-page-sales .career-op {
     background: center center url(../images/web_img_career/sales_kv-mb.jpg);
     background-size: cover;
@@ -1253,7 +1257,7 @@ h3 {
   background-size: cover;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .career-page.career-page-marketing .career-op {
     background: center center url(../images/web_img_career/marketing_kv-mb.jpg);
     background-size: cover;
@@ -1269,7 +1273,7 @@ h3 {
   background-size: cover;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .career-page.career-page-engineering .career-op {
     background: center center url(../images/web_img_career/engineering_kv-mb.jpg);
     background-size: cover;
