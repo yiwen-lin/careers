@@ -22,9 +22,10 @@ body {
 	color: #000;
 	overflow-x: hidden;
 	padding-top: 95px;
-	@include mobile {
+	@media only screen and (max-width: 1120px){
 		padding-top: 64px;
 	}
+	
 }
 section {
 	padding: 100px 0;
@@ -175,11 +176,11 @@ h3 {
 //index start =================================
 // op
 .index-op {
-	background-image: url(../images/web_img_index/index_op_1440-685kb.jpg);
+	background-image: url(../images/web_img_index/index_op_1920-486kb.jpg);
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: calc(100vh - 95px);
+	height: 780px;
 	position: relative;
 	@include mobile {
 		height: 550px;
@@ -194,7 +195,7 @@ h3 {
 		margin: 43px auto 0 ;
 		@include mobile {
 			width: 135px;
-			margin-top: 25px;
+			margin-top: 60px;
 		}
 	}
 
@@ -453,6 +454,9 @@ h3 {
 		@include mobile {
 			top: 60px;
 		}
+		p {
+			font-weight: 400;
+		}
 	}
 	.article-img-holder {
 		width: 100%;
@@ -630,10 +634,7 @@ h3 {
 //s1 
 .group-block {
 	margin-top: 0;
-	margin-bottom: 50px;
-	@include mobile {
-		margin-bottom: 0;
-	}
+	// margin-bottom: 50px;
 }
 .group-class {
 	margin-bottom: 30px;

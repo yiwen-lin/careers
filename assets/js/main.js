@@ -12,7 +12,7 @@ $(document).ready(function() {
     });
     $('.btn-welfare').click(function() {
         $('html, body').animate({
-        scrollTop: welfare.top + 450
+        scrollTop: welfare.top + 510
         }, 700);
         return false;
     }); 
@@ -44,7 +44,7 @@ $('.slickbox--1').slick({
     dots: false,
     infinite: false,
     speed: 300,
-    slidesToShow: 1.5,//顯示圖片數量
+    slidesToShow: 1.7,//顯示圖片數量
     slidesToScroll: 1,
     centerMode: true,
     centerPadding: '150px',//調整起始位置
@@ -76,3 +76,17 @@ $('.slickbox--2').slick({
     ]
 });
 //slide show end ===============
+
+
+//手機版 card：超過50個字以"..."取代
+var width = $(window).width();
+if (width < 768) {
+    var len = 55;
+    $(".text-card p").each(function () {
+        if ($(this).text().length > len) {
+            $(this).attr("title", $(this).text());
+            var text = $(this).text().substring(0, len - 1) + "......";
+            $(this).text(text);
+        }
+    });
+}

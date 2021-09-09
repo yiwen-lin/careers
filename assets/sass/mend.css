@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .slickbox {
   margin: 0px auto;
 }
@@ -11,7 +12,7 @@
   padding: 0 15px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .slickbox .slickbox--1 .slick-slide {
     padding: 0 6px;
   }
@@ -21,7 +22,7 @@
   top: -80px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .slickbox .slickbox--1 .slick-prev, .slickbox .slickbox--1 .slick-next {
     top: -56px;
   }
@@ -35,7 +36,7 @@
   color: black;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .slickbox .slickbox--1 .slick-prev {
     left: inherit;
     right: 128px;
@@ -50,7 +51,7 @@
   color: black;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .slickbox .slickbox--1 .slick-next {
     left: inherit;
     right: 30px;
@@ -62,7 +63,7 @@
   margin-top: 20px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .slickbox .slickbox--1 p {
     margin-top: 15px;
   }
@@ -72,7 +73,7 @@
   padding: 0 42px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .slickbox .slickbox--2 .slick-slide {
     padding: 0;
   }
@@ -82,7 +83,7 @@
   top: -80px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .slickbox .slickbox--2 .slick-prev, .slickbox .slickbox--2 .slick-next {
     top: -56px;
   }
@@ -96,7 +97,7 @@
   color: black;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .slickbox .slickbox--2 .slick-prev {
     left: inherit;
     right: 100px;
@@ -111,7 +112,7 @@
   color: black;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .slickbox .slickbox--2 .slick-next {
     left: inherit;
     right: 0;
@@ -122,7 +123,7 @@
   margin-bottom: 25px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .slickbox .slickbox--2 h2 {
     margin-bottom: 10px;
   }
@@ -136,7 +137,7 @@
   left: 20px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .slickbox .slickbox--2 .text-card {
     bottom: 0;
     left: 0;
@@ -151,7 +152,7 @@
   padding-bottom: 100px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .card-wrap {
     padding-bottom: 60px;
   }
@@ -161,7 +162,7 @@
   margin-bottom: 40px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .card-wrap h1 {
     margin-bottom: 20px;
   }
@@ -171,9 +172,113 @@
   margin-top: 80px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .slide-wrap {
     margin-top: 60px;
+  }
+}
+
+.card-link {
+  color: #000;
+  /* item1:記者 */
+  /* item2:內容製作 */
+  /* item3:行銷 */
+  /* item4:業務 */
+  /* item5:數位產品 */
+  /* item6:數據工程 */
+  /* item7:資訊工程 */
+  /* item8:維運管理 */
+}
+
+.card-link .item {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-link .item .career-img-holder {
+  height: 225px;
+}
+
+.card-link .item1 .career-img-holder {
+  background: url(../images/img_teams-related/img_teams-related_reporters.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.card-link .item2 .career-img-holder {
+  background: url(../images/img_teams-related/img_teams-related_content-product.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.card-link .item3 .career-img-holder {
+  background: url(../images/img_teams-related/img_teams-related_marketing.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.card-link .item4 .career-img-holder {
+  background: url(../images/img_teams-related/img_teams-related_sales.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.card-link .item5 .career-img-holder {
+  background: url(../images/img_teams-related/img_teams-related_digital-product.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.card-link .item6 .career-img-holder {
+  background: url(../images/img_teams-related/img_teams-related_data.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.card-link .item7 .career-img-holder {
+  background: url(../images/img_teams-related/img_teams-related_engineering.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.card-link .item8 .career-img-holder {
+  background: url(../images/img_teams-related/img_teams-related_support-and-operation.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.card-link:hover .career-img-holder {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+@media only screen and (max-width: 768px) {
+  .card-link .item .career-img-holder {
+    height: 177px;
   }
 }
 /*# sourceMappingURL=mend.css.map */

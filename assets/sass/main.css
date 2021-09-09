@@ -10,7 +10,7 @@ body {
   padding-top: 95px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1120px) {
   body {
     padding-top: 64px;
   }
@@ -183,11 +183,11 @@ h3 {
 }
 
 .index-op {
-  background-image: url(../images/web_img_index/index_op_1440-685kb.jpg);
+  background-image: url(../images/web_img_index/index_op_1920-486kb.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: calc(100vh - 95px);
+  height: 780px;
   position: relative;
 }
 
@@ -209,7 +209,7 @@ h3 {
 @media only screen and (max-width: 768px) {
   .index-op .slogan-op {
     width: 135px;
-    margin-top: 25px;
+    margin-top: 60px;
   }
 }
 
@@ -588,6 +588,10 @@ h3 {
   }
 }
 
+.grid-container .article-text p {
+  font-weight: 400;
+}
+
 .grid-container .article-img-holder {
   width: 100%;
   height: 320px;
@@ -787,13 +791,6 @@ h3 {
 
 .group-block {
   margin-top: 0;
-  margin-bottom: 50px;
-}
-
-@media only screen and (max-width: 768px) {
-  .group-block {
-    margin-bottom: 0;
-  }
 }
 
 .group-class {

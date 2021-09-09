@@ -1,5 +1,5 @@
 @mixin mobile{
-	@media only screen and (max-width: 767px){
+	@media only screen and (max-width: 768px){
 		@content;
 	}
 }
@@ -141,4 +141,98 @@
     @include mobile {
         margin-top: 60px;
     }
+}
+
+
+
+
+
+
+
+
+.card-link {
+    color: #000;
+    .item {
+        position: relative;
+        overflow: hidden;
+        .career-img-holder {
+            height: 225px;
+          }
+      }
+
+    /* item1:記者 */
+    .item1 .career-img-holder {
+        background: url(../images/img_teams-related/img_teams-related_reporters.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: all 1s;
+    }
+    /* item2:內容製作 */
+    .item2 .career-img-holder {
+        background: url(../images/img_teams-related/img_teams-related_content-product.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: all 1s;
+    }
+    /* item3:行銷 */
+    .item3 .career-img-holder {
+        background: url(../images/img_teams-related/img_teams-related_marketing.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: all 1s;
+    }
+    /* item4:業務 */
+    .item4 .career-img-holder {
+        background: url(../images/img_teams-related/img_teams-related_sales.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: all 1s;
+    }
+    /* item5:數位產品 */
+    .item5 .career-img-holder {
+        background: url(../images/img_teams-related/img_teams-related_digital-product.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: all 1s;
+    }
+    /* item6:數據工程 */
+    .item6 .career-img-holder {
+        background: url(../images/img_teams-related/img_teams-related_data.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: all 1s;
+    }
+    /* item7:資訊工程 */
+    .item7 .career-img-holder {
+        background: url(../images/img_teams-related/img_teams-related_engineering.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: all 1s;
+    }
+    /* item8:維運管理 */
+    .item8 .career-img-holder {
+        background: url(../images/img_teams-related/img_teams-related_support-and-operation.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: all 1s;
+    }
+
+    &:hover {
+        .career-img-holder {
+            transform: scale(1.05); 
+          }
+    }
+  }
+@include mobile {
+    .card-link .item .career-img-holder {
+        height: 177px;
+      }
 }
