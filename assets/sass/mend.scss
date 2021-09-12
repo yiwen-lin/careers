@@ -51,7 +51,8 @@
             }
         }
         p{
-            margin-left: 30px;
+            margin-left: 26px;
+            margin-right: 26px;
             margin-top: 20px;
             @include mobile {
                 margin-top: 15px;
@@ -117,9 +118,14 @@
 }
 .about-us-page {
     .slickbox {
-        margin: 100px auto;
+        margin: 0 auto 100px;
         @include mobile {
-            // margin: 60px auto;
+            margin-bottom: 60px ;
+        }
+    }
+    .slide-title {
+        h1 {
+            text-align: left;
         }
     }
 }
@@ -137,11 +143,12 @@
     }
 }
 .slide-wrap {
-    margin-top: 80px;
+    margin-top: 20px;
     @include mobile {
-        margin-top: 60px;
+        margin-top: 5px;
     }
 }
+
 
 
 

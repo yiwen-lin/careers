@@ -296,6 +296,10 @@ h3 {
 			background-size: cover;
 			background-repeat: no-repeat;
 			transition: all 1s;
+			@include mobile {
+				background: url(../images/web_img_index/mobile_img_index/index_reporters.jpg);
+				background-size: cover;
+			}
 		}
 		&:hover {
 			.article-img-holder {
@@ -316,7 +320,9 @@ h3 {
 			background-repeat: no-repeat;
 			transition: all 1s;
 			@include mobile {
-				background-position-y: -30px;
+				// background-position-y: -30px;
+				background: url(../images/web_img_index/mobile_img_index/index_marketing.jpg);
+				background-size: cover;
 			}
 		}
 		&:hover {
@@ -338,7 +344,8 @@ h3 {
 			background-repeat: no-repeat;
 			transition: all 1s;
 			@include mobile {
-				background-position-x: -50px;
+				background: url(../images/web_img_index/mobile_img_index/index_digital-product.jpg);
+				background-size: cover;
 			}
 		}
 		&:hover {
@@ -359,6 +366,10 @@ h3 {
 			background-size: cover;
 			background-repeat: no-repeat;
 			transition: all 1s;
+			@include mobile {
+				background: url(../images/web_img_index/mobile_img_index/index_data.jpg);
+				background-size: cover;
+			}
 		}
 		&:hover {
 			.article-img-holder {
@@ -378,6 +389,10 @@ h3 {
 			background-size: cover;
 			background-repeat: no-repeat;
 			transition: all 1s;
+			@include mobile {
+				background: url(../images/web_img_index/mobile_img_index/index_content-product.jpg);
+				background-size: cover;
+			}
 		}
 		&:hover {
 			.article-img-holder {
@@ -397,6 +412,10 @@ h3 {
 			background-size: cover;
 			background-repeat: no-repeat;
 			transition: all 1s;
+			@include mobile {
+				background: url(../images/web_img_index/mobile_img_index/index_engineering.jpg);
+				background-size: cover;
+			}
 		}
 		&:hover {
 			.article-img-holder {
@@ -416,6 +435,10 @@ h3 {
 			background-size: cover;
 			background-repeat: no-repeat;
 			transition: all 1s;
+			@include mobile {
+				background: url(../images/web_img_index/mobile_img_index/index_sales.jpg);
+				background-size: cover;
+			}
 		}
 		&:hover {
 			.article-img-holder {
@@ -435,6 +458,10 @@ h3 {
 			background-size: cover;
 			background-repeat: no-repeat;
 			transition: all 1s;
+			@include mobile {
+				background: url(../images/web_img_index/mobile_img_index/index_support-and-operation.jpg);
+				background-size: cover;
+			}
 		}
 		&:hover {
 			.article-img-holder {
@@ -562,6 +589,10 @@ h3 {
 	ul {
 		position: fixed;
 		display: block;
+		top:140px;
+		@include mobile {
+			top: inherit;
+		}
 		li {
 			font-size: 18px;
 			font-weight: 400;
@@ -721,7 +752,7 @@ h3 {
 	}
 	.inner-h2 {
 		margin-top: 136px;
-		margin-bottom: 10px;
+		margin-bottom: 60px;
 		@include mobile {
 			margin-top: 20px;
 			margin-bottom: 40px;
@@ -765,7 +796,7 @@ h3 {
 			content: '';
 			width: 100%;
 			position: absolute;
-			bottom: 0;
+			bottom: -1px;
 			left: 0;
 			border-bottom: 30px solid #f1f1f1;
 			border-left: 100vw solid transparent;

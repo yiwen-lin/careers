@@ -331,6 +331,13 @@ h3 {
   transition: all 1s;
 }
 
+@media only screen and (max-width: 768px) {
+  .grid-container .item1 .article-img-holder {
+    background: url(../images/web_img_index/mobile_img_index/index_reporters.jpg);
+    background-size: cover;
+  }
+}
+
 .grid-container .item1:hover .article-img-holder {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
@@ -364,7 +371,8 @@ h3 {
 
 @media only screen and (max-width: 768px) {
   .grid-container .item2 .article-img-holder {
-    background-position-y: -30px;
+    background: url(../images/web_img_index/mobile_img_index/index_marketing.jpg);
+    background-size: cover;
   }
 }
 
@@ -401,7 +409,8 @@ h3 {
 
 @media only screen and (max-width: 768px) {
   .grid-container .item3 .article-img-holder {
-    background-position-x: -50px;
+    background: url(../images/web_img_index/mobile_img_index/index_digital-product.jpg);
+    background-size: cover;
   }
 }
 
@@ -436,6 +445,13 @@ h3 {
   transition: all 1s;
 }
 
+@media only screen and (max-width: 768px) {
+  .grid-container .item4 .article-img-holder {
+    background: url(../images/web_img_index/mobile_img_index/index_data.jpg);
+    background-size: cover;
+  }
+}
+
 .grid-container .item4:hover .article-img-holder {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
@@ -465,6 +481,13 @@ h3 {
   background-repeat: no-repeat;
   -webkit-transition: all 1s;
   transition: all 1s;
+}
+
+@media only screen and (max-width: 768px) {
+  .grid-container .item5 .article-img-holder {
+    background: url(../images/web_img_index/mobile_img_index/index_content-product.jpg);
+    background-size: cover;
+  }
 }
 
 .grid-container .item5:hover .article-img-holder {
@@ -498,6 +521,13 @@ h3 {
   transition: all 1s;
 }
 
+@media only screen and (max-width: 768px) {
+  .grid-container .item6 .article-img-holder {
+    background: url(../images/web_img_index/mobile_img_index/index_engineering.jpg);
+    background-size: cover;
+  }
+}
+
 .grid-container .item6:hover .article-img-holder {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
@@ -529,6 +559,13 @@ h3 {
   transition: all 1s;
 }
 
+@media only screen and (max-width: 768px) {
+  .grid-container .item7 .article-img-holder {
+    background: url(../images/web_img_index/mobile_img_index/index_sales.jpg);
+    background-size: cover;
+  }
+}
+
 .grid-container .item7:hover .article-img-holder {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
@@ -558,6 +595,13 @@ h3 {
   background-repeat: no-repeat;
   -webkit-transition: all 1s;
   transition: all 1s;
+}
+
+@media only screen and (max-width: 768px) {
+  .grid-container .item8 .article-img-holder {
+    background: url(../images/web_img_index/mobile_img_index/index_support-and-operation.jpg);
+    background-size: cover;
+  }
 }
 
 .grid-container .item8:hover .article-img-holder {
@@ -724,6 +768,13 @@ h3 {
 .navbar ul {
   position: fixed;
   display: block;
+  top: 140px;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar ul {
+    top: inherit;
+  }
 }
 
 .navbar ul li {
@@ -893,7 +944,7 @@ h3 {
 
 .about-us-page .inner-h2 {
   margin-top: 136px;
-  margin-bottom: 10px;
+  margin-bottom: 60px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -945,7 +996,7 @@ h3 {
   content: '';
   width: 100%;
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
   border-bottom: 30px solid #f1f1f1;
   border-left: 100vw solid transparent;

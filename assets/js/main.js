@@ -1,28 +1,42 @@
 //about us 左navbar start ==========
 // HighLight navbar on scroll 
 $(document).ready(function() {
-// declare variable
     var group = $("#s-group").position();
     var welfare = $("#s-welfare").position();
-    $('.btn-group').click(function() {
-        $('html, body').animate({
-        scrollTop: group.top
-        }, 700);
-        return false;
-    });
-    $('.btn-welfare').click(function() {
-        $('html, body').animate({
-        scrollTop: welfare.top + 510
-        }, 700);
-        return false;
-    }); 
 
+    
+
+
+    if($(window).innerWidth() <= 769) {
+        $('.btn-welfare').click(function() {
+            $('html, body').animate({
+            scrollTop: welfare.top + 500
+            }, 700);
+            return false;
+        }); 
+      }
+      
+      else {
+        $('.btn-group').click(function() {
+            $('html, body').animate({
+            scrollTop: group.top
+            }, 700);
+            return false;
+        });
+        $('.btn-welfare').click(function() {
+            $('html, body').animate({
+            scrollTop: welfare.top + 540
+            }, 700);
+            return false;
+        }); 
+      }
+    
 });
 
 // show/hide 
 $(window).scroll(function () {
-    let s1top = $('.s1').offset().top - window.innerHeight + 200
-    let s2top = $('.s2').offset().top - window.innerHeight + 200
+    let s1top = $('.s1').offset().top - window.innerHeight / 6
+    let s2top = $('.s2').offset().top - window.innerHeight / 6
     let box3top = $('.box3').offset().top - window.innerHeight
     if ($(this).scrollTop() > s1top && $(this).scrollTop() < s2top) {
         $('#info').addClass('active')
@@ -36,6 +50,8 @@ $(window).scroll(function () {
         $('.navbar').hide(500);
     }
 });
+
+
 //about us 左navbar end ==========
 
 //slide show start ===============

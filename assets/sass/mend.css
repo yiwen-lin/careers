@@ -59,7 +59,8 @@
 }
 
 .slickbox .slickbox--1 p {
-  margin-left: 30px;
+  margin-left: 26px;
+  margin-right: 26px;
   margin-top: 20px;
 }
 
@@ -145,7 +146,17 @@
 }
 
 .about-us-page .slickbox {
-  margin: 100px auto;
+  margin: 0 auto 100px;
+}
+
+@media only screen and (max-width: 768px) {
+  .about-us-page .slickbox {
+    margin-bottom: 60px;
+  }
+}
+
+.about-us-page .slide-title h1 {
+  text-align: left;
 }
 
 .card-wrap {
@@ -169,12 +180,12 @@
 }
 
 .slide-wrap {
-  margin-top: 80px;
+  margin-top: 20px;
 }
 
 @media only screen and (max-width: 768px) {
   .slide-wrap {
-    margin-top: 60px;
+    margin-top: 5px;
   }
 }
 
