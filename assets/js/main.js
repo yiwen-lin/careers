@@ -4,9 +4,6 @@ $(document).ready(function() {
     var group = $("#s-group").position();
     var welfare = $("#s-welfare").position();
 
-    
-
-
     if($(window).innerWidth() <= 769) {
         $('.btn-welfare').click(function() {
             $('html, body').animate({
@@ -15,11 +12,10 @@ $(document).ready(function() {
             return false;
         }); 
       }
-      
       else {
         $('.btn-group').click(function() {
             $('html, body').animate({
-            scrollTop: group.top
+            scrollTop: group.top + 460
             }, 700);
             return false;
         });
@@ -35,21 +31,43 @@ $(document).ready(function() {
 
 // show/hide 
 $(window).scroll(function () {
-    let s1top = $('.s1').offset().top - window.innerHeight / 6
-    let s2top = $('.s2').offset().top - window.innerHeight / 6
-    let box3top = $('.box3').offset().top - window.innerHeight
-    if ($(this).scrollTop() > s1top && $(this).scrollTop() < s2top) {
-        $('#info').addClass('active')
-        $('#welfare').removeClass('active')
-        $('.navbar').show(500);
-    } else if ($(this).scrollTop() > s2top && $(this).scrollTop() < box3top ) {
-        $('#welfare').addClass('active')
-        $('#info').removeClass('active')
-        $('.navbar').show(500);
-    } else {
-        $('.navbar').hide(500);
+    if($(window).innerWidth() <= 769) {
+        let s1top = $('.s1').offset().top -300
+        let s2top = $('.s2').offset().top -300
+        let box3top = $('.box3').offset().top - window.innerHeight
+        if ($(this).scrollTop() > s1top && $(this).scrollTop() < s2top) {
+            $('#info').addClass('active')
+            $('#welfare').removeClass('active')
+            $('.navbar').show(500);
+        } else if ($(this).scrollTop() > s2top && $(this).scrollTop() < box3top ) {
+            $('#welfare').addClass('active')
+            $('#info').removeClass('active')
+            $('.navbar').show(500);
+        } else {
+            $('.navbar').hide(500);
+        }
+    }
+    else {
+        let s1top = $('.s1').offset().top - window.innerHeight / 6
+        let s2top = $('.s2').offset().top - window.innerHeight / 6
+        let box3top = $('.box3').offset().top - window.innerHeight
+        if ($(this).scrollTop() > s1top && $(this).scrollTop() < s2top) {
+            $('#info').addClass('active')
+            $('#welfare').removeClass('active')
+            $('.navbar').show(500);
+        } else if ($(this).scrollTop() > s2top && $(this).scrollTop() < box3top ) {
+            $('#welfare').addClass('active')
+            $('#info').removeClass('active')
+            $('.navbar').show(500);
+        } else {
+            $('.navbar').hide(500);
+        }
     }
 });
+
+
+
+
 
 
 //about us 左navbar end ==========

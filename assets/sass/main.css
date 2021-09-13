@@ -149,9 +149,6 @@ h3 {
   border: 1px solid #000000;
   border-radius: 2px;
   z-index: 1;
-}
-
-.more-btn a {
   color: #000;
 }
 
@@ -168,7 +165,7 @@ h3 {
   transition: all 0.3s ease;
 }
 
-.more-btn:hover a {
+.more-btn:hover {
   color: #fff;
 }
 
@@ -1045,6 +1042,8 @@ h3 {
   .career-page .career-img img {
     width: 100%;
     height: 390px;
+    -o-object-position: 33%;
+       object-position: 33%;
   }
 }
 
@@ -1236,6 +1235,13 @@ h3 {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .career-page.career-page-support .career-img img {
+    -o-object-position: 15%;
+       object-position: 15%;
+  }
+}
+
 .career-page.career-page-data .career-op {
   background: center center url(../images/web_img_career/data_kv.jpg);
   background-size: cover;
@@ -1252,6 +1258,13 @@ h3 {
   padding-top: 0;
 }
 
+@media only screen and (max-width: 768px) {
+  .career-page.career-page-data .career-img img {
+    -o-object-position: 55%;
+       object-position: 55%;
+  }
+}
+
 .career-page.career-page-digital .career-op {
   background: center center url(../images/web_img_career/digital-product_kv.jpg);
   background-size: cover;
@@ -1266,6 +1279,13 @@ h3 {
 
 .career-page.career-page-digital .s-join {
   padding-top: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .career-page.career-page-digital .s2 .career-img img {
+    -o-object-position: 84%;
+       object-position: 84%;
+  }
 }
 
 .career-page.career-page-content .career-op {
@@ -1300,6 +1320,13 @@ h3 {
   padding-top: 0;
 }
 
+@media only screen and (max-width: 768px) {
+  .career-page.career-page-sales .career-img img {
+    -o-object-position: 8%;
+       object-position: 8%;
+  }
+}
+
 .career-page.career-page-marketing .career-op {
   background: center center url(../images/web_img_career/marketing_kv.jpg);
   background-size: cover;
@@ -1316,6 +1343,13 @@ h3 {
   padding-top: 0;
 }
 
+@media only screen and (max-width: 768px) {
+  .career-page.career-page-marketing .career-img img {
+    -o-object-position: 13%;
+       object-position: 13%;
+  }
+}
+
 .career-page.career-page-engineering .career-op {
   background: center center url(../images/web_img_career/engineering_kv.jpg);
   background-size: cover;
@@ -1330,5 +1364,12 @@ h3 {
 
 .career-page.career-page-engineering .s-join {
   padding-top: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .career-page.career-page-engineering .career-img img {
+    -o-object-position: 77%;
+       object-position: 77%;
+  }
 }
 /*# sourceMappingURL=main.css.map */
