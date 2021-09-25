@@ -172,7 +172,7 @@ h3 {
 //index start =================================
 // op
 .index-op {
-	background-image: url(../images/web_img_index/index_op_1920-486kb.jpg);
+	background-image: url(../images/web_img_index/index_op_1440-0923.jpg);
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -712,8 +712,9 @@ h3 {
 			}
 		}
 		.inner-h3 {
+			margin-top: 100px;
 			@include mobile {
-				margin-top: 24px;
+				margin-top: 60px;
 			}
 		}
 	}
@@ -730,16 +731,9 @@ h3 {
 		position: relative;
 	}
 	.inner {
-		background-color: #fff;
-		position: absolute;
-		top: -50px;
-		padding-top: 50px;
-		padding-right: 90px;
+		margin-top: 100px;
 		@include mobile {
-			position: inherit;
-			top: 0;
-			padding-right: 0;
-			padding-top: 40px;
+			margin-top: 40px;
 		}
 		h1 {
 			text-align: left;
@@ -747,10 +741,10 @@ h3 {
 		}
 	}
 	.inner-h2 {
-		margin-top: 136px;
+		// margin-top: 136px;
 		margin-bottom: 60px;
 		@include mobile {
-			margin-top: 20px;
+			// margin-top: 20px;
 			margin-bottom: 40px;
 		}
 	}

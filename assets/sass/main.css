@@ -180,7 +180,7 @@ h3 {
 }
 
 .index-op {
-  background-image: url(../images/web_img_index/index_op_1920-486kb.jpg);
+  background-image: url(../images/web_img_index/index_op_1440-0923.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -898,9 +898,13 @@ h3 {
   }
 }
 
+.about-us-page .s2 .inner-h3 {
+  margin-top: 100px;
+}
+
 @media only screen and (max-width: 768px) {
   .about-us-page .s2 .inner-h3 {
-    margin-top: 24px;
+    margin-top: 60px;
   }
 }
 
@@ -918,19 +922,12 @@ h3 {
 }
 
 .about-us-page .inner {
-  background-color: #fff;
-  position: absolute;
-  top: -50px;
-  padding-top: 50px;
-  padding-right: 90px;
+  margin-top: 100px;
 }
 
 @media only screen and (max-width: 768px) {
   .about-us-page .inner {
-    position: inherit;
-    top: 0;
-    padding-right: 0;
-    padding-top: 40px;
+    margin-top: 40px;
   }
 }
 
@@ -940,13 +937,11 @@ h3 {
 }
 
 .about-us-page .inner-h2 {
-  margin-top: 136px;
   margin-bottom: 60px;
 }
 
 @media only screen and (max-width: 768px) {
   .about-us-page .inner-h2 {
-    margin-top: 20px;
     margin-bottom: 40px;
   }
 }

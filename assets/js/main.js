@@ -64,12 +64,6 @@ $(window).scroll(function () {
         }
     }
 });
-
-
-
-
-
-
 //about us 左navbar end ==========
 
 //slide show start ===============
