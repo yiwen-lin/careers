@@ -7,7 +7,7 @@ $(document).ready(function() {
     if($(window).innerWidth() <= 769) {
         $('.btn-welfare').click(function() {
             $('html, body').animate({
-            scrollTop: welfare.top + 500
+            scrollTop: welfare.top + 400
             }, 700);
             return false;
         }); 
@@ -50,7 +50,7 @@ $(window).scroll(function () {
     else {
         let s1top = $('.s1').offset().top - window.innerHeight / 6
         let s2top = $('.s2').offset().top - window.innerHeight / 6
-        let box3top = $('.box3').offset().top - window.innerHeight
+        let box3top = $('.box3').offset().top - 400
         if ($(this).scrollTop() > s1top && $(this).scrollTop() < s2top) {
             $('#info').addClass('active')
             $('#welfare').removeClass('active')
