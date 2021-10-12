@@ -676,6 +676,13 @@ h3 {
   margin: 50px auto 0;
 }
 
+@media (min-width: 769px) and (max-width: 1119px) {
+  .logo-group {
+    padding: 0 10%;
+    text-align: center;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .logo-group {
     margin-top: 20px;
@@ -686,6 +693,12 @@ h3 {
   display: inline-block;
   height: 30px;
   margin: 0 48px;
+}
+
+@media (min-width: 769px) and (max-width: 1119px) {
+  .logo-group a {
+    margin-bottom: 30px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -701,6 +714,13 @@ h3 {
 
 .logo-group img {
   height: 30px;
+}
+
+@media (min-width: 769px) and (max-width: 1119px) {
+  .logo-group img {
+    height: auto;
+    width: 110px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
